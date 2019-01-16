@@ -1,6 +1,6 @@
 resource "digitalocean_droplet" "gophish" {
   image = "ubuntu-16-04-x64"
-  name = "${var.client_name}"
+  name = "${var.instance_name}"
   region = "nyc1"
   size = "1GB"
   ssh_keys = ["${var.ssh_fingerprint}"]
